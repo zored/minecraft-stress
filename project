@@ -1,0 +1,19 @@
+#!/bin/sh
+set -ex
+
+dir=$(dirname $0)
+
+case $1 in
+  run) ##
+    shift 1
+    go run $dir "$@"
+    ;;
+  build) ##
+    go build $dir "$@"
+    ;;
+  *)
+    echo "Unknown command: $@"
+    cat $0 | grep '\#\#'
+    exit 1
+    ;;
+esac

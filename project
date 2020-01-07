@@ -11,6 +11,10 @@ case $1 in
   build) ##
     go build $dir "$@"
     ;;
+  release) ##
+    unset GITLAB_TOKEN
+    goreleaser release
+    ;;
   *)
     echo "Unknown command: $@"
     cat $0 | grep '\#\#'

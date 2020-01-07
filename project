@@ -13,7 +13,7 @@ case $1 in
     ;;
   release) ##
     unset GITLAB_TOKEN
-    goreleaser release
+    goreleaser release --rm-dist
     ;;
   *)
     echo "Unknown command: $@"

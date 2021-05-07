@@ -1,5 +1,7 @@
 github.com/Tnze/go-mc v1.14.5-0.20200104174014-3041792dac55 h1:hsCx98/r01b6QAoZM9nKcOkp7l5gaNGA/L90MtXNIrA=
 github.com/Tnze/go-mc v1.14.5-0.20200104174014-3041792dac55/go.mod h1:ZQpDcppzIn7X37rsk39CAL4C7nkmu4sxWvDpcy9pncc=
+github.com/Tnze/go-mc v1.15.1 h1:4yvOFfmJWat9CxoSM1Adit2jQczFUuODPbRp6sBRqtw=
+github.com/Tnze/go-mc v1.15.1/go.mod h1:ZQpDcppzIn7X37rsk39CAL4C7nkmu4sxWvDpcy9pncc=
 github.com/google/uuid v1.1.1 h1:Gkbcsh/GbpXz7lPftLA3P6TYMwjCLYm83jiFQZF/3gY=
 github.com/google/uuid v1.1.1/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/ztrue/shutdown v0.1.1 h1:GKR2ye2OSQlq1GNVE/s2NbrIMsFdmL+NdR6z6t1k+Tg=

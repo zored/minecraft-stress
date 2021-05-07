@@ -5,7 +5,6 @@ import (
 	"flag"
 	"fmt"
 	"github.com/Tnze/go-mc/bot"
-	"github.com/Tnze/go-mc/chat"
 	"github.com/ztrue/shutdown"
 	"log"
 	"sync"
@@ -20,10 +19,10 @@ type (
 )
 
 var (
-	host = flag.String("host", "localhost", "server host")
-	port = flag.Int("port", 25565, "server port")
-	bots = flag.Int("bots", 20, "number of bots")
-	ping = flag.Bool("ping", false, "just ping server")
+	host       = flag.String("host", "localhost", "server host")
+	port       = flag.Int("port", 25565, "server port")
+	bots       = flag.Int("bots", 20, "number of bots")
+	ping       = flag.Bool("ping", false, "just ping server")
 	nickPrefix = flag.String("nick", "man", "bot nick prefix")
 )
 
@@ -46,10 +45,7 @@ func doStressTest() {
 	shutdown.Add(func() {
 		clientMutex.Lock()
 		for _, client := range clients {
-			err := client.Disconnect(chat.Message{
-				Text: "bye...",
-				Bold: true,
-			})
+			err := client.Disconnect()
 			if err != nil {
 				log.Fatal(err)
 			}
